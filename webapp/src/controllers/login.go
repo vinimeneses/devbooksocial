@@ -1,10 +1,10 @@
 package controllers
 
-import "net/http"
+import (
+	"net/http"
+	"webapp/src/utils"
+)
 
 func CarregarPaginaDeLogin(w http.ResponseWriter, r *http.Request) {
-	_, erro := w.Write([]byte("Carregando a página de login"))
-	if erro != nil {
-		return
-	}
+	utils.ExecutarTemplate(w, "login.html", nil)
 }
