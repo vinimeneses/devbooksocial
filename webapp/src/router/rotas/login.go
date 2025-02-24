@@ -5,7 +5,7 @@ import (
 	"webapp/src/controllers"
 )
 
-var rotasUsuarios = []Rota{
+var rotasLogin = []Rota{
 	{
 		URI:                "/",
 		Metodo:             http.MethodGet,
